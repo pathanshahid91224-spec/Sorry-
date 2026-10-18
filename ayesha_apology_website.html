@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#140f1b">
+<title>A Little Something For You 💗</title>
+<style>
+:root{--pink:#ff7fa8;--lav:#b18cff;--cream:#fff5ed;--ink:#201626}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:#100d16;color:#fff;font-family:Georgia,'Times New Roman',serif}
+button{font:inherit;cursor:pointer}
+.hero{min-height:92vh;display:grid;place-items:center;text-align:center;padding:70px 22px;position:relative;overflow:hidden;background:linear-gradient(180deg,rgba(18,12,25,.22),rgba(15,10,19,.88)),radial-gradient(ellipse at 20% 15%,#9c647c 0,transparent 35%),radial-gradient(ellipse at 80% 20%,#685080 0,transparent 38%),linear-gradient(140deg,#382b47,#d18c91 48%,#241b34)}
+.hero:before{content:"";position:absolute;inset:0;background:repeating-linear-gradient(115deg,transparent 0 90px,rgba(255,255,255,.025) 91px 92px);pointer-events:none}
+.hero-inner{max-width:760px;position:relative;z-index:1}
+.eyebrow{letter-spacing:.22em;text-transform:uppercase;font:12px Arial,sans-serif;color:#ffe2ec}
+h1{font-size:clamp(2.7rem,8vw,5.5rem);line-height:1.03;margin:18px 0;color:#fff8f8;font-weight:500}
+h1 span{display:block;color:#ffb2ca;font-style:italic}
+.subtitle{font-size:clamp(1rem,2.8vw,1.25rem);line-height:1.8;color:#fff0f4;max-width:580px;margin:24px auto}
+.pill{border:0;border-radius:999px;padding:16px 28px;background:linear-gradient(110deg,#ff8cac,#ffb3c8);color:#321725;box-shadow:0 8px 30px #ff7fa844;transition:.2s}
+.pill:hover{transform:translateY(-2px);filter:brightness(1.06)}
+.tiny{font:12px Arial,sans-serif;color:#e8d6e3;margin-top:17px}
+.float{position:absolute;font-size:24px;opacity:.7;animation:drift 5s ease-in-out infinite}
+.f1{top:18%;left:12%}.f2{right:13%;top:26%;animation-delay:1s}.f3{bottom:15%;right:20%;animation-delay:2s}
+@keyframes drift{50%{transform:translateY(-14px) rotate(8deg)}}
+.section{padding:70px 18px}
+.paper{max-width:790px;margin:auto;background:var(--cream);color:var(--ink);padding:clamp(25px,6vw,58px);border-radius:5px;box-shadow:0 18px 60px #0005;position:relative;transform:rotate(-.3deg)}
+.paper:before{content:"♥";position:absolute;top:-25px;left:calc(50% - 18px);font-size:35px;color:var(--pink);text-shadow:0 3px 9px #d75a8055}
+.paper h2{text-align:center;font-size:clamp(1.8rem,5vw,2.5rem);font-weight:500;margin:0 0 24px}
+.underline{height:2px;width:48%;background:var(--pink);margin:-10px auto 28px}
+.paper p{font-size:1.08rem;line-height:1.9;margin:14px 0}
+.signature{text-align:right;font-style:italic;margin-top:28px!important}
+.choices{text-align:center;padding:15px 18px 80px;background:linear-gradient(#100d16,#18101f)}
+.choices h2{font-size:clamp(1.8rem,5vw,2.7rem);font-weight:500;margin:10px 0}
+.choices p{color:#e8d9e5;line-height:1.7}
+.buttons{display:flex;flex-wrap:wrap;justify-content:center;gap:12px;margin:28px auto;max-width:850px}
+.choice{border:1px solid #ffffff2b;border-radius:999px;padding:15px 22px;color:white;background:#ffffff12;min-width:175px;transition:.2s}
+.choice:hover{transform:translateY(-3px);background:#ffffff22}
+.choice.yes{background:linear-gradient(110deg,#f47e9f,#d86f9d);color:#2a1420;border:0}
+.choice.more{background:linear-gradient(110deg,#9b72e8,#bd83db);border:0}
+#reply{min-height:34px;color:#ffb2ca;font-size:1.15rem;padding:4px 12px}
+footer{text-align:center;color:#bbaabc;font-size:.85rem;padding:0 18px 28px}
+@media(max-width:480px){.hero{min-height:88vh}.section{padding:55px 14px}.choice{width:100%;max-width:320px}}
+</style>
+</head>
+<body>
+<header class="hero">
+  <span class="float f1">♡</span><span class="float f2">✦</span><span class="float f3">♡</span>
+  <div class="hero-inner">
+    <div class="eyebrow">A tiny page, made with care</div>
+    <h1>Ayesha ke liye <span>kuch special… ♡</span></h1>
+    <p class="subtitle">Ayesha, shayad aap mujhse naraz hain, lekin aap mere liye important hain. Isliye ye chhota sa surprise sirf aapke liye.</p>
+    <button class="pill" onclick="document.querySelector('#letter').scrollIntoView({behavior:'smooth'})">♥ &nbsp; Click karo</button>
+    <div class="tiny">No pressure. Bas dil se likhi hui kuch baatein.</div>
+  </div>
+</header>
+
+<section class="section" id="letter">
+  <article class="paper">
+    <h2>Mera dil se message 💌</h2><div class="underline"></div>
+    <p>Ayesha, mujhe nahi pata aap abhi kitni naraz hain, lekin main aapki feelings ko lightly nahi lena chahta.</p>
+    <p>Agar meri kisi baat ya action se aapko bura laga, toh I’m genuinely sorry. Mera intention aapko hurt karna nahi tha, phir bhi agar aisa hua toh main apni galti samajhna aur use sudharna chahta hoon.</p>
+    <p>Aapki dosti aur aapki khushi mere liye important hai. Main aap par jaldi maaf karne ka pressure nahi daalunga. Jab aap ready hon, main aapki baat sunne ke liye yahin hoon.</p>
+    <p>Bas itna chahta hoon ki hum araam se baat karke sab theek kar sakein, Ayesha. 💗</p>
+    <p class="signature">— Aapka dost ♡</p>
+  </article>
+</section>
+
+<section class="choices">
+  <h2>Ab tum decide karo…</h2>
+  <p>Ayesha, kya aap mujhe maaf karengi? Jo sach mein feel ho, wahi choose karna. ♡</p>
+  <div class="buttons">
+    <button class="choice yes" onclick="respond('Thank you, Ayesha 🥹💗 Aapki baat aur feelings mere liye important hain.')">🥹 Maaf kiya ♥</button>
+    <button class="choice" onclick="respond('Theek hai, main aapko time dunga. Jab aap ready hon, baat kar lijiyega. 🤍')">😤 Abhi nahi</button>
+    <button class="choice more" onclick="respond('Challenge accepted 😅💗 Main aur effort karunga — bina pressure diye!')">☺️ Thoda aur manao</button>
+  </div>
+  <div id="reply" aria-live="polite"></div>
+</section>
+<footer>Made with care ♡ &nbsp; • &nbsp; Ayesha ke liye, dil se ♡</footer>
+<script>
+function respond(message){
+  document.getElementById('reply').textContent=message;
+  document.getElementById('reply').scrollIntoView({behavior:'smooth',block:'center'});
+}
+</script>
+</body>
+</html>
